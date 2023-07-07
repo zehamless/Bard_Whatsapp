@@ -19,7 +19,7 @@ client.on("ready", () => {
 client.initialize();
 
 client.on("message", async (message) => {
-  if (message.body.startsWith("!")) {
+  if (message.body.startsWith("!") && message.body.length > 2) {
     const command = message.body.substring(1).trim();
     try {
       const english = await toEnglish(command);
@@ -31,7 +31,7 @@ client.on("message", async (message) => {
     }
   } else {
     message.reply(
-      "Dimulai dengan tanda seru (!), contoh: !halo, hasil hanya dalam bahasa Inggris. \nLimit input 1000 character. \nKalo blank coba input ulang. \nBelum nemu API gratis yang bisa translate ke bahasa Indonesia :v"
+      "Dimulai dengan tanda seru (!), contoh: !halo. \nhasil hanya dalam bahasa Inggris. \nLimit input 1000 character. \nKalo blank coba input ulang. \nBelum nemu API gratis yang bisa translate ke bahasa Indonesia :v"
     );
   }
 });
