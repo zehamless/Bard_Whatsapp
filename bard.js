@@ -19,6 +19,7 @@ async function getBard(text) {
   }
   catch(err){
     console.log(err);
+    return "Gapaham, coba lagi ya."
   }
 }
 
