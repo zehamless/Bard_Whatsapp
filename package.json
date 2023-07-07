@@ -20,5 +20,8 @@
     "whatsapp-web.js": "^1.21.0",
     "wwebjs-mongo": "^1.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=14.20.1"
+  },
 }
