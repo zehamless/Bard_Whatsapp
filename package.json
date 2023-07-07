@@ -1,0 +1,22 @@
+{
+  "name": "bard-wa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bard-ai": "^1.5.0",
+    "bing-translate-api": "^2.9.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.21.0"
+  },
+  "type": "module"
+}
