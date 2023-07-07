@@ -6,7 +6,8 @@ import { getBard } from "./bard.js";
 import { MongoStore } from "wwebjs-mongo";
 import mongoose from "mongoose";
 
-mongoose.connect(process.env.MONGODB_URI).then(() => {
+const uri = String(process.env.MONGO_URI);
+mongoose.connect().then(() => {
   const store = new MongoStore({ mongoose: mongoose });
   const client = new Client({
       authStrategy: new RemoteAuth({
