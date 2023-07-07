@@ -7,7 +7,7 @@ import { MongoStore } from "wwebjs-mongo";
 import mongoose from "mongoose";
 
 const uri = String(process.env.MONGO_URI);
-mongoose.connect().then(() => {
+mongoose.connect(uri).then(() => {
   const store = new MongoStore({ mongoose: mongoose });
   const client = new Client({
       authStrategy: new RemoteAuth({
